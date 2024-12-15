@@ -187,18 +187,10 @@ const Displaycommment = ({
                     <option value="el">Greek</option>
                     <option value="hi">Hindi</option>
                     <option value="it">Italian</option>
-                    <option value="ja">Japanese</option>
-                    <option value="ko">Korean</option>
-                    <option value="ms">Malay</option>
-                    <option value="pl">Polish</option>
-                    <option value="pt">Portuguese</option>
                     <option value="ro">Romanian</option>
                     <option value="ru">Russian</option>
                     <option value="es">Spanish</option>
                     <option value="sv">Swedish</option>
-                    <option value="ta">Tamil</option>
-                    <option value="th">Thai</option>
-                    <option value="tr">Turkish</option>
                 </select>
                 <button onClick={handleTranslate}>Translate</button>
             </div>
