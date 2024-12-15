@@ -1,0 +1,150 @@
+/* .video-call-container {
+    background-color: #232323;
+} */
+
+.note-call{
+    color: white;
+    position: absolute;
+    top: 75%;
+    font-size: 16px;
+    left: 10%;
+}
+
+.control-g-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #9f1414;
+    color: white;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    transform: translateX(-50%);
+}
+
+.control-e-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #9f1414;
+    color: white;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    transform: translateX(-50%);
+}
+
+.control-g-button:hover {
+    background-color:  #df5353;
+}
+
+.control-g-button:active {
+    background-color:#9f1414;
+}
+
+.control-e-button:hover {
+    background-color:  #df5353;
+}
+
+.control-e-button:active {
+    background-color:#9f1414;
+}
+
+.not_logged_in {
+    color: white;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.call-logo {
+    position: absolute;
+    top: 8%;
+    left: 50px;
+    color: white;
+}
+
+.fi-Video1{
+    color: #9f1414;
+    position: absolute;
+    top: 10.5%;
+    left: 2%;
+    transform: translateX(-50%);
+}
+
+.fi-Video2{
+    color: #9f1414;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title-call {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+
+
+.copy-roomid-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.copy-roomid-container h3 {
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; 
+    color: white;
+}
+
+.control-button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.copy-roomid-container .control-button{
+    position: absolute;
+    top: 51%;
+    right: 31%;
+    transform: translateX(-50%);
+    color:#9f1414;
+}
+
+.copy-roomid-container .control-button:hover{
+    background-color:#df5353;
+}
+
+.copy-roomid-container .control-button:active{
+    background-color:#9f1414;
+}
+
+.not_user{
+    color: white;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+}

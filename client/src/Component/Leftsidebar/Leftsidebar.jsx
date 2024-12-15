@@ -3,6 +3,7 @@ import "./Leftsidebar.css"
 import shorts from "./shorts.png"
 import {AiOutlineHome} from "react-icons/ai"
 import {MdOutlineExplore, MdOutlineSubscriptions, MdOutlineVideoLibrary} from "react-icons/md"
+import { FaPeopleGroup } from "react-icons/fa6";
 import { NavLink } from 'react-router-dom'
 const Leftsidebar = () => {
   return (
@@ -23,6 +24,10 @@ const Leftsidebar = () => {
             <MdOutlineSubscriptions size={22} className='icon_sidebar'/>
             <div className="text_sidebar_icon" style={{fontSize:"12px"}}>Subscription</div>
         </div>
+        <NavLink to={'/Group'} className="icon_sidebar_div">
+            <FaPeopleGroup size={22} className='icon_sidebar'/>
+            <div className="text_sidebar_icon">Groups</div>
+        </NavLink>
         <NavLink to={'/Library'} className="icon_sidebar_div">
             <MdOutlineVideoLibrary size={22} className='icon_sidebar'/>
             <div className="text_sidebar_icon">Library</div>

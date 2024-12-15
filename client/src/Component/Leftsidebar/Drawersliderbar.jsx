@@ -5,6 +5,7 @@ import { MdOutlineExplore, MdOutlineVideoLibrary, MdSubscriptions, MdOutlineWatc
 import { FaHistory } from 'react-icons/fa'
 import shorts from "./shorts.png"
 import { NavLink } from 'react-router-dom'
+import { FaPeopleGroup } from "react-icons/fa6";
 const Drawersliderbar = ({ toggledraw, toggledrawersidebar }) => {
   return (
     <div className="container_DrawaerLeftSidebar" style={toggledrawersidebar}>
@@ -37,6 +38,12 @@ const Drawersliderbar = ({ toggledraw, toggledrawersidebar }) => {
           </div>
         </div>
         <div className="libraryBtn_Drawerleftsidebar">
+          <NavLink to={'/Group'} className="icon_sidebar_div">
+            <p>
+              <FaPeopleGroup size={22} className='icon_sidebar' style={{margin: "auto 0.7rem"}} />
+              <div className="text_sidebar_icon">Groups</div>
+            </p>          
+          </NavLink>
           <NavLink to={'/Library'} className="icon_sidebar_div">
             <p>
               <MdOutlineVideoLibrary size={22} className='icon_sidebar' style={{ margin: "auto 0.7rem" }} />

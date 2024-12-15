@@ -1,6 +1,6 @@
 import axios from "axios"
 const API=axios.create({baseURL:`http://localhost:5000/`})
-
+//const API=axios.create({baseURL:`https://your-tube-clone-2dlv.onrender.com`})
 API.interceptors.request.use((req)=>{
     if(localStorage.getItem("Profile")){
         req.headers.Authorization=`Bearer ${JSON.parse(localStorage.getItem("Profile")).token}`
@@ -18,10 +18,10 @@ export const getvideos=()=>API.get("/video/getvideos");
 export const likevideo=(id,Like)=>API.patch(`/video/like/${id}`,{Like});
 export const viewsvideo=(id)=>API.patch(`/video/view/${id}`);
 
-export const postcomment=(commentdata)=>API.post('/comment/post',commentdata)
+export const postcomment = (commentData) => API.post('/comment/post', commentData);
 export const deletecomment=(id)=>API.delete(`/comment/delete/${id}`)
 export const editcomment=(id,commentbody)=>API.patch(`/comment/edit/${id}`,{commentbody})
-export const getallcomment=()=>API.get('/comment/get')
+export const getallcomment = () => API.get('/comment/get');
 
 export const addtohistory=(historydata)=>API.post("/video/history",historydata)
 export const getallhistory=()=>API.get('/video/getallhistory')
