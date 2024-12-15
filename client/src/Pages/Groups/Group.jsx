@@ -21,7 +21,7 @@ const Group = () => {
 
   // Fetch groups from the server
   useEffect(() => {
-    axios.get('http://localhost:5000/group')
+    axios.get('https://your-tube-clone-1-tjmh.onrender.com/group')
       .then(response => {
         setGroups(response.data);
       })
@@ -33,7 +33,7 @@ const Group = () => {
   // Handle Create Group
   const createGroup = () => {
     if (newGroup.name && newGroup.description && newGroup.leadername) {
-      axios.post('http://localhost:5000/group/create', newGroup)
+      axios.post('https://your-tube-clone-1-tjmh.onrender.com/group/create', newGroup)
         .then(response => {
           setGroups([...groups, response.data]);
           alert('Group Created Successfully!');
@@ -56,9 +56,9 @@ const Group = () => {
 
   // Generate a token for the invitation link
   const token = localStorage.getItem('token');
-  const invitationLink = `http://localhost:3000/invite?group=${encodeURIComponent(newPerson.groupName)}&email=${encodeURIComponent(newPerson.email)}&token=${token}`;
+  const invitationLink = `https://dhk-your-tube-clone.netlify.app/invite?group=${encodeURIComponent(newPerson.groupName)}&email=${encodeURIComponent(newPerson.email)}&token=${token}`;
   
-  axios.post('http://localhost:5000/invite/send-invite', {
+  axios.post('https://your-tube-clone-1-tjmh.onrender.com/invite/send-invite', {
     email: newPerson.email,
     groupName: newPerson.groupName,
     invitationLink

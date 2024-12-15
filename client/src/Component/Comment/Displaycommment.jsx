@@ -88,11 +88,12 @@ const Displaycommment = ({
 
     const handleTranslate = async () => {
         try {
-            const response = await axios.post("https://translator-1-pi8c.onrender.com/translate", {
+            const response = await axios.post("https://translator-klqz.onrender.com/translate", {
                 text: commentbody,
                 source_lang: "en", // Specify source language explicitly
                 target_lang: targetLang,
             });
+            alert("Wait for few seconds as the translation may take few seconds!!")
             setTranslatedText(response.data.translatedText);
         } catch (error) {
             console.error("Translation failed:", error);
@@ -102,7 +103,7 @@ const Displaycommment = ({
     const handleLikeDislike = async (action) => {
         try {
             const response = await axios.post(
-                `http://localhost:5000/comment/like/${cid}`, 
+                `https://your-tube-clone-1-tjmh.onrender.com/comment/like/${cid}`, 
                 { action },
                 {
                     headers: {
@@ -180,24 +181,24 @@ const Displaycommment = ({
                 >
                     <option value="ar">Arabic</option>
                     <option value="zh">Chinese</option>
-                    <option value="zh">Dutch</option>
-                    <option value="en">French</option>
-                    <option value="hi">German</option>
-                    <option value="zh">Greek</option>
-                    <option value="es">Hindi</option>
-                    <option value="de">Italian</option>
-                    <option value="zh">Japanese</option>
-                    <option value="zh">Korean</option>
-                    <option value="zh">Malay</option>
-                    <option value="zh">Polish</option>
-                    <option value="zh">Portuguese</option>
-                    <option value="zh">Romanian</option>
-                    <option value="zh">Russian</option>
-                    <option value="zh">Spanish</option>
-                    <option value="zh">Swedish</option>
-                    <option value="zh">Tamil</option>
-                    <option value="zh">Thai</option>
-                    <option value="zh">Turkish</option>
+                    <option value="nl">Dutch</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="el">Greek</option>
+                    <option value="hi">Hindi</option>
+                    <option value="it">Italian</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ko">Korean</option>
+                    <option value="ms">Malay</option>
+                    <option value="pl">Polish</option>
+                    <option value="pt">Portuguese</option>
+                    <option value="ro">Romanian</option>
+                    <option value="ru">Russian</option>
+                    <option value="es">Spanish</option>
+                    <option value="sv">Swedish</option>
+                    <option value="ta">Tamil</option>
+                    <option value="th">Thai</option>
+                    <option value="tr">Turkish</option>
                 </select>
                 <button onClick={handleTranslate}>Translate</button>
             </div>

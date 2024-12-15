@@ -78,7 +78,7 @@ const Videopage = () => {
             <div className="container_videoPage">
                 <div className="container2_videoPage">
                     <div className="video_display_screen_videoPage">
-                        <video src={`https://your-tube-clone-2dlv.onrender.com/${vv?.filepath}`} className="video_ShowVideo_videoPage" controls></video>
+                        <video src={`https://your-tube-clone-1-tjmh.onrender.com/${vv?.filepath}`} className="video_ShowVideo_videoPage" controls></video>
                         <div className="video_details_videoPage">
                             <div className="video_btns_title_VideoPage_cont">
                                 <p className="video_title_VideoPage">{vv?.title}</p>

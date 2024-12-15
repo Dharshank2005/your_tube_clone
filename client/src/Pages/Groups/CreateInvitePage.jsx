@@ -37,7 +37,7 @@ const InviteAcceptPage = () => {
     try {
       //console.log('Sending request with:', { groupName, username, email });
       // API call to add member to group
-      const response = await axios.post('http://localhost:5000/invite/accept-invite', {
+      const response = await axios.post('https://your-tube-clone-1-tjmh.onrender.com/invite/accept-invite', {
         groupName,
         username,
         email
